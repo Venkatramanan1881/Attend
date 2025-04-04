@@ -1,0 +1,123 @@
+.header {
+  background-color: #f5f5f5;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #171717;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.username {
+  color: #171717;
+}
+
+.sign-out-btn {
+  color: #171717;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.sign-out-btn:hover {
+  color: #525252;
+}
+
+.tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tile {
+  width: 250px;
+  height: 250px;
+  background-color: #1f2937;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tile-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.tile-title {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Attendance tile specific styles */
+.tile:nth-child(1) .tile-icon {
+  color: #3B82F6;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+}
+
+/* Employees tile specific styles */
+.tile:nth-child(2) .tile-icon {
+  color: #10B981;
+  filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.5));
+}
+
+/* Leave Management tile specific styles */
+.tile:nth-child(3) .tile-icon {
+  color: #8B5CF6;
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.5));
+}
+
+@media (max-width: 768px) {
+  .tiles-container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .tile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .tile-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tile-title {
+    font-size: 1rem;
+  }
+} 
